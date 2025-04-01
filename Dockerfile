@@ -2,8 +2,6 @@ FROM cypress/base
 
 WORKDIR /app
 
-COPY package.json .
-
 COPY . .
 
 RUN npm config set strict-ssl false 
